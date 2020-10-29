@@ -8,3 +8,7 @@ Modifications/Extensions:
 - Sequentially performs detection on all images in a user-specified "/images" folder in the project directory
 - Comments explaining YOLOv3 architecture in more detail (convolutional layers, outptut layers, non-maxima supression, etc.)
 - Places all labeled images into a separate "DetectedImages" folder in the project directory 
+
+PLEASE NOTE: 
+The weights file used to train YOLO is too large to upload to GitHub, please download it here:
+https://pjreddie.com/media/files/yolov3.weights
