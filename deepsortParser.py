@@ -40,14 +40,18 @@ for line in textList:
     classPair = items[1].split(':')
     # Get integer in line
     ints = [int(s) for s in (re.findall(r'\d+', line))]
+    # Get average coordinates
+    (x, y) = (ints[1] + ints[3]) / 2.0 , (ints[2] + ints[4]) / 2.0
     # Save to obj dict
     obj = {}
     obj['trackerID'] = ints[0]
+    obj['class'] = classPair[1].strip()
     obj['xmin'] = ints[1]
     obj['ymin'] = ints[2]
     obj['xmax'] = ints[3]
     obj['ymax'] = ints[4]
-    obj['class'] = classPair[1].strip()
+    obj['x'] = x
+    obj['y'] = y
     # Append obj to frame
     frame['objects'].append(obj)
 
