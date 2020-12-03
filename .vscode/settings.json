@@ -1,5 +1,7 @@
 {
-    "python.pythonPath": "/Users/adityakuroodi/.virtualenvs/YOLO/bin/python"
+    "python.pythonPath": "/Users/adityakuroodi/.virtualenvs/YOLO/bin/python",
+    "python.linting.pylintArgs": ["--extension-pkg-whitelist=cv2"]
+
 
 
 }
