@@ -1,0 +1,2219 @@
+{
+  "took" : 4,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 59,
+      "relation" : "eq"
+    },
+    "max_score" : 1.9443179,
+    "hits" : [
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "282",
+        "_score" : 1.9443179,
+        "_source" : {
+          "frame" : "282",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 582,
+              "ymin" : 661,
+              "xmax" : 847,
+              "ymax" : 820,
+              "x" : 714.5,
+              "y" : 740.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 810,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 731,
+              "x" : 951.0,
+              "y" : 670.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 803,
+              "ymin" : 469,
+              "xmax" : 1032,
+              "ymax" : 568,
+              "x" : 917.5,
+              "y" : 518.5,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 894,
+              "ymin" : 867,
+              "xmax" : 1195,
+              "ymax" : 1014,
+              "x" : 1044.5,
+              "y" : 940.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 709,
+              "ymin" : 361,
+              "xmax" : 931,
+              "ymax" : 445,
+              "x" : 820.0,
+              "y" : 403.0,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 555,
+              "xmax" : 799,
+              "ymax" : 697,
+              "x" : 681.0,
+              "y" : 626.0,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 804,
+              "ymin" : 543,
+              "xmax" : 1036,
+              "ymax" : 630,
+              "x" : 920.0,
+              "y" : 586.5,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 871,
+              "ymin" : 762,
+              "xmax" : 1145,
+              "ymax" : 882,
+              "x" : 1008.0,
+              "y" : 822.0,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 657,
+              "ymin" : 154,
+              "xmax" : 810,
+              "ymax" : 216,
+              "x" : 733.5,
+              "y" : 185.0,
+              "confidence" : 0.9
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 717,
+              "ymin" : 303,
+              "xmax" : 901,
+              "ymax" : 381,
+              "x" : 809.0,
+              "y" : 342.0,
+              "confidence" : 0.9
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 494,
+              "ymin" : 137,
+              "xmax" : 649,
+              "ymax" : 235,
+              "x" : 571.5,
+              "y" : 186.0,
+              "confidence" : 0.84
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1352,
+              "ymin" : 297,
+              "xmax" : 1506,
+              "ymax" : 376,
+              "x" : 1429.0,
+              "y" : 336.5,
+              "confidence" : 0.75
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 519,
+              "ymin" : 255,
+              "xmax" : 686,
+              "ymax" : 377,
+              "x" : 602.5,
+              "y" : 316.0,
+              "confidence" : 0.81
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1564,
+              "ymin" : 833,
+              "xmax" : 1617,
+              "ymax" : 920,
+              "x" : 1590.5,
+              "y" : 876.5,
+              "confidence" : 0.59
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 43,
+              "xmax" : 1029,
+              "ymax" : 128,
+              "x" : 943.5,
+              "y" : 85.5,
+              "confidence" : 0.63
+            },
+            {
+              "trackerID" : 20,
+              "class" : "truck",
+              "xmin" : 672,
+              "ymin" : 213,
+              "xmax" : 887,
+              "ymax" : 304,
+              "x" : 779.5,
+              "y" : 258.5,
+              "confidence" : 0.71
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1473,
+              "ymin" : 396,
+              "xmax" : 1667,
+              "ymax" : 486,
+              "x" : 1570.0,
+              "y" : 441.0,
+              "confidence" : 0.55
+            },
+            {
+              "trackerID" : 25,
+              "class" : "truck",
+              "xmin" : 205,
+              "ymin" : 204,
+              "xmax" : 345,
+              "ymax" : 360,
+              "x" : 275.0,
+              "y" : 282.0,
+              "confidence" : 0.55
+            },
+            {
+              "trackerID" : 29,
+              "class" : "person",
+              "xmin" : 367,
+              "ymin" : 816,
+              "xmax" : 421,
+              "ymax" : 926,
+              "x" : 394.0,
+              "y" : 871.0,
+              "confidence" : 0.51
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "286",
+        "_score" : 1.9402151,
+        "_source" : {
+          "frame" : "286",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 583,
+              "ymin" : 661,
+              "xmax" : 846,
+              "ymax" : 820,
+              "x" : 714.5,
+              "y" : 740.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 809,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 732,
+              "x" : 950.5,
+              "y" : 670.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 803,
+              "ymin" : 468,
+              "xmax" : 1029,
+              "ymax" : 568,
+              "x" : 916.0,
+              "y" : 518.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 895,
+              "ymin" : 867,
+              "xmax" : 1192,
+              "ymax" : 1014,
+              "x" : 1043.5,
+              "y" : 940.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 710,
+              "ymin" : 361,
+              "xmax" : 924,
+              "ymax" : 443,
+              "x" : 817.0,
+              "y" : 402.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 556,
+              "xmax" : 800,
+              "ymax" : 697,
+              "x" : 681.5,
+              "y" : 626.5,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 806,
+              "ymin" : 545,
+              "xmax" : 1032,
+              "ymax" : 628,
+              "x" : 919.0,
+              "y" : 586.5,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 869,
+              "ymin" : 760,
+              "xmax" : 1146,
+              "ymax" : 882,
+              "x" : 1007.5,
+              "y" : 821.0,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 655,
+              "ymin" : 153,
+              "xmax" : 812,
+              "ymax" : 217,
+              "x" : 733.5,
+              "y" : 185.0,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 716,
+              "ymin" : 304,
+              "xmax" : 900,
+              "ymax" : 380,
+              "x" : 808.0,
+              "y" : 342.0,
+              "confidence" : 0.88
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 493,
+              "ymin" : 140,
+              "xmax" : 648,
+              "ymax" : 236,
+              "x" : 570.5,
+              "y" : 188.0,
+              "confidence" : 0.89
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1351,
+              "ymin" : 298,
+              "xmax" : 1504,
+              "ymax" : 376,
+              "x" : 1427.5,
+              "y" : 337.0,
+              "confidence" : 0.81
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 514,
+              "ymin" : 253,
+              "xmax" : 687,
+              "ymax" : 378,
+              "x" : 600.5,
+              "y" : 315.5,
+              "confidence" : 0.84
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1617,
+              "ymax" : 922,
+              "x" : 1590.0,
+              "y" : 876.5,
+              "confidence" : 0.58
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 44,
+              "xmax" : 1028,
+              "ymax" : 129,
+              "x" : 943.0,
+              "y" : 86.5,
+              "confidence" : 0.64
+            },
+            {
+              "trackerID" : 20,
+              "class" : "truck",
+              "xmin" : 670,
+              "ymin" : 213,
+              "xmax" : 887,
+              "ymax" : 305,
+              "x" : 778.5,
+              "y" : 259.0,
+              "confidence" : 0.73
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1471,
+              "ymin" : 395,
+              "xmax" : 1666,
+              "ymax" : 485,
+              "x" : 1568.5,
+              "y" : 440.0,
+              "confidence" : 0.54
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1013,
+              "ymin" : 168,
+              "xmax" : 1204,
+              "ymax" : 236,
+              "x" : 1108.5,
+              "y" : 202.0,
+              "confidence" : 0.56
+            },
+            {
+              "trackerID" : 29,
+              "class" : "person",
+              "xmin" : 363,
+              "ymin" : 829,
+              "xmax" : 418,
+              "ymax" : 939,
+              "x" : 390.5,
+              "y" : 884.0,
+              "confidence" : 0.7
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "287",
+        "_score" : 1.9402151,
+        "_source" : {
+          "frame" : "287",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 583,
+              "ymin" : 661,
+              "xmax" : 846,
+              "ymax" : 820,
+              "x" : 714.5,
+              "y" : 740.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 808,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 732,
+              "x" : 950.0,
+              "y" : 670.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 803,
+              "ymin" : 468,
+              "xmax" : 1028,
+              "ymax" : 568,
+              "x" : 915.5,
+              "y" : 518.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 896,
+              "ymin" : 867,
+              "xmax" : 1191,
+              "ymax" : 1014,
+              "x" : 1043.5,
+              "y" : 940.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 711,
+              "ymin" : 362,
+              "xmax" : 923,
+              "ymax" : 442,
+              "x" : 817.0,
+              "y" : 402.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 556,
+              "xmax" : 800,
+              "ymax" : 697,
+              "x" : 681.5,
+              "y" : 626.5,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 806,
+              "ymin" : 545,
+              "xmax" : 1032,
+              "ymax" : 627,
+              "x" : 919.0,
+              "y" : 586.0,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 869,
+              "ymin" : 760,
+              "xmax" : 1146,
+              "ymax" : 882,
+              "x" : 1007.5,
+              "y" : 821.0,
+              "confidence" : 0.93
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 654,
+              "ymin" : 153,
+              "xmax" : 813,
+              "ymax" : 217,
+              "x" : 733.5,
+              "y" : 185.0,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 716,
+              "ymin" : 304,
+              "xmax" : 901,
+              "ymax" : 380,
+              "x" : 808.5,
+              "y" : 342.0,
+              "confidence" : 0.88
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 493,
+              "ymin" : 139,
+              "xmax" : 648,
+              "ymax" : 236,
+              "x" : 570.5,
+              "y" : 187.5,
+              "confidence" : 0.88
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1350,
+              "ymin" : 298,
+              "xmax" : 1504,
+              "ymax" : 376,
+              "x" : 1427.0,
+              "y" : 337.0,
+              "confidence" : 0.79
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 512,
+              "ymin" : 249,
+              "xmax" : 689,
+              "ymax" : 378,
+              "x" : 600.5,
+              "y" : 313.5,
+              "confidence" : 0.84
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1617,
+              "ymax" : 922,
+              "x" : 1590.0,
+              "y" : 876.5,
+              "confidence" : 0.57
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 44,
+              "xmax" : 1027,
+              "ymax" : 129,
+              "x" : 942.5,
+              "y" : 86.5,
+              "confidence" : 0.66
+            },
+            {
+              "trackerID" : 20,
+              "class" : "truck",
+              "xmin" : 671,
+              "ymin" : 213,
+              "xmax" : 886,
+              "ymax" : 305,
+              "x" : 778.5,
+              "y" : 259.0,
+              "confidence" : 0.72
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1471,
+              "ymin" : 395,
+              "xmax" : 1665,
+              "ymax" : 485,
+              "x" : 1568.0,
+              "y" : 440.0,
+              "confidence" : 0.51
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1014,
+              "ymin" : 169,
+              "xmax" : 1207,
+              "ymax" : 236,
+              "x" : 1110.5,
+              "y" : 202.5,
+              "confidence" : 0.56
+            },
+            {
+              "trackerID" : 29,
+              "class" : "person",
+              "xmin" : 362,
+              "ymin" : 832,
+              "xmax" : 417,
+              "ymax" : 941,
+              "x" : 389.5,
+              "y" : 886.5,
+              "confidence" : 0.65
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "288",
+        "_score" : 1.9402151,
+        "_source" : {
+          "frame" : "288",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 583,
+              "ymin" : 661,
+              "xmax" : 845,
+              "ymax" : 820,
+              "x" : 714.0,
+              "y" : 740.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 809,
+              "ymin" : 609,
+              "xmax" : 1093,
+              "ymax" : 732,
+              "x" : 951.0,
+              "y" : 670.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 803,
+              "ymin" : 468,
+              "xmax" : 1029,
+              "ymax" : 568,
+              "x" : 916.0,
+              "y" : 518.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 896,
+              "ymin" : 867,
+              "xmax" : 1191,
+              "ymax" : 1014,
+              "x" : 1043.5,
+              "y" : 940.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 712,
+              "ymin" : 362,
+              "xmax" : 923,
+              "ymax" : 442,
+              "x" : 817.5,
+              "y" : 402.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 562,
+              "ymin" : 556,
+              "xmax" : 800,
+              "ymax" : 697,
+              "x" : 681.0,
+              "y" : 626.5,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 806,
+              "ymin" : 545,
+              "xmax" : 1032,
+              "ymax" : 627,
+              "x" : 919.0,
+              "y" : 586.0,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 869,
+              "ymin" : 760,
+              "xmax" : 1146,
+              "ymax" : 882,
+              "x" : 1007.5,
+              "y" : 821.0,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 654,
+              "ymin" : 153,
+              "xmax" : 813,
+              "ymax" : 217,
+              "x" : 733.5,
+              "y" : 185.0,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 716,
+              "ymin" : 304,
+              "xmax" : 901,
+              "ymax" : 380,
+              "x" : 808.5,
+              "y" : 342.0,
+              "confidence" : 0.87
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 492,
+              "ymin" : 138,
+              "xmax" : 649,
+              "ymax" : 235,
+              "x" : 570.5,
+              "y" : 186.5,
+              "confidence" : 0.86
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1350,
+              "ymin" : 299,
+              "xmax" : 1505,
+              "ymax" : 377,
+              "x" : 1427.5,
+              "y" : 338.0,
+              "confidence" : 0.78
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 513,
+              "ymin" : 252,
+              "xmax" : 688,
+              "ymax" : 378,
+              "x" : 600.5,
+              "y" : 315.0,
+              "confidence" : 0.83
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1617,
+              "ymax" : 922,
+              "x" : 1590.0,
+              "y" : 876.5,
+              "confidence" : 0.59
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 44,
+              "xmax" : 1027,
+              "ymax" : 129,
+              "x" : 942.5,
+              "y" : 86.5,
+              "confidence" : 0.65
+            },
+            {
+              "trackerID" : 20,
+              "class" : "truck",
+              "xmin" : 671,
+              "ymin" : 213,
+              "xmax" : 886,
+              "ymax" : 305,
+              "x" : 778.5,
+              "y" : 259.0,
+              "confidence" : 0.7
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1470,
+              "ymin" : 395,
+              "xmax" : 1665,
+              "ymax" : 485,
+              "x" : 1567.5,
+              "y" : 440.0,
+              "confidence" : 0.52
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1013,
+              "ymin" : 168,
+              "xmax" : 1208,
+              "ymax" : 236,
+              "x" : 1110.5,
+              "y" : 202.0,
+              "confidence" : 0.54
+            },
+            {
+              "trackerID" : 29,
+              "class" : "person",
+              "xmin" : 361,
+              "ymin" : 832,
+              "xmax" : 417,
+              "ymax" : 944,
+              "x" : 389.0,
+              "y" : 888.0,
+              "confidence" : 0.8
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "289",
+        "_score" : 1.9402151,
+        "_source" : {
+          "frame" : "289",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 583,
+              "ymin" : 661,
+              "xmax" : 846,
+              "ymax" : 820,
+              "x" : 714.5,
+              "y" : 740.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 809,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 733,
+              "x" : 950.5,
+              "y" : 671.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 803,
+              "ymin" : 468,
+              "xmax" : 1030,
+              "ymax" : 568,
+              "x" : 916.5,
+              "y" : 518.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 896,
+              "ymin" : 867,
+              "xmax" : 1191,
+              "ymax" : 1014,
+              "x" : 1043.5,
+              "y" : 940.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 712,
+              "ymin" : 362,
+              "xmax" : 923,
+              "ymax" : 442,
+              "x" : 817.5,
+              "y" : 402.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 556,
+              "xmax" : 799,
+              "ymax" : 697,
+              "x" : 681.0,
+              "y" : 626.5,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 806,
+              "ymin" : 545,
+              "xmax" : 1033,
+              "ymax" : 627,
+              "x" : 919.5,
+              "y" : 586.0,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 870,
+              "ymin" : 760,
+              "xmax" : 1147,
+              "ymax" : 883,
+              "x" : 1008.5,
+              "y" : 821.5,
+              "confidence" : 0.93
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 654,
+              "ymin" : 152,
+              "xmax" : 813,
+              "ymax" : 217,
+              "x" : 733.5,
+              "y" : 184.5,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 715,
+              "ymin" : 304,
+              "xmax" : 901,
+              "ymax" : 380,
+              "x" : 808.0,
+              "y" : 342.0,
+              "confidence" : 0.87
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 492,
+              "ymin" : 137,
+              "xmax" : 649,
+              "ymax" : 235,
+              "x" : 570.5,
+              "y" : 186.0,
+              "confidence" : 0.87
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1349,
+              "ymin" : 299,
+              "xmax" : 1505,
+              "ymax" : 377,
+              "x" : 1427.0,
+              "y" : 338.0,
+              "confidence" : 0.78
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 514,
+              "ymin" : 254,
+              "xmax" : 687,
+              "ymax" : 378,
+              "x" : 600.5,
+              "y" : 316.0,
+              "confidence" : 0.83
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1617,
+              "ymax" : 922,
+              "x" : 1590.0,
+              "y" : 876.5,
+              "confidence" : 0.59
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 44,
+              "xmax" : 1027,
+              "ymax" : 129,
+              "x" : 942.5,
+              "y" : 86.5,
+              "confidence" : 0.66
+            },
+            {
+              "trackerID" : 20,
+              "class" : "truck",
+              "xmin" : 671,
+              "ymin" : 213,
+              "xmax" : 886,
+              "ymax" : 305,
+              "x" : 778.5,
+              "y" : 259.0,
+              "confidence" : 0.7
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1470,
+              "ymin" : 395,
+              "xmax" : 1666,
+              "ymax" : 485,
+              "x" : 1568.0,
+              "y" : 440.0,
+              "confidence" : 0.55
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1012,
+              "ymin" : 168,
+              "xmax" : 1209,
+              "ymax" : 236,
+              "x" : 1110.5,
+              "y" : 202.0,
+              "confidence" : 0.54
+            },
+            {
+              "trackerID" : 29,
+              "class" : "person",
+              "xmin" : 361,
+              "ymin" : 835,
+              "xmax" : 417,
+              "ymax" : 947,
+              "x" : 389.0,
+              "y" : 891.0,
+              "confidence" : 0.8
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "53",
+        "_score" : 1.9323502,
+        "_source" : {
+          "frame" : "53",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 583,
+              "ymin" : 659,
+              "xmax" : 846,
+              "ymax" : 820,
+              "x" : 714.5,
+              "y" : 739.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 809,
+              "ymin" : 610,
+              "xmax" : 1092,
+              "ymax" : 733,
+              "x" : 950.5,
+              "y" : 671.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 803,
+              "ymin" : 468,
+              "xmax" : 1028,
+              "ymax" : 568,
+              "x" : 915.5,
+              "y" : 518.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 897,
+              "ymin" : 866,
+              "xmax" : 1191,
+              "ymax" : 1014,
+              "x" : 1044.0,
+              "y" : 940.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 712,
+              "ymin" : 361,
+              "xmax" : 923,
+              "ymax" : 445,
+              "x" : 817.5,
+              "y" : 403.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 564,
+              "ymin" : 555,
+              "xmax" : 800,
+              "ymax" : 697,
+              "x" : 682.0,
+              "y" : 626.0,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 802,
+              "ymin" : 545,
+              "xmax" : 1033,
+              "ymax" : 626,
+              "x" : 917.5,
+              "y" : 585.5,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 869,
+              "ymin" : 760,
+              "xmax" : 1146,
+              "ymax" : 883,
+              "x" : 1007.5,
+              "y" : 821.5,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 653,
+              "ymin" : 154,
+              "xmax" : 813,
+              "ymax" : 216,
+              "x" : 733.0,
+              "y" : 185.0,
+              "confidence" : 0.9
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 715,
+              "ymin" : 304,
+              "xmax" : 902,
+              "ymax" : 381,
+              "x" : 808.5,
+              "y" : 342.5,
+              "confidence" : 0.85
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 488,
+              "ymin" : 138,
+              "xmax" : 651,
+              "ymax" : 237,
+              "x" : 569.5,
+              "y" : 187.5,
+              "confidence" : 0.81
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1350,
+              "ymin" : 298,
+              "xmax" : 1506,
+              "ymax" : 375,
+              "x" : 1428.0,
+              "y" : 336.5,
+              "confidence" : 0.79
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 509,
+              "ymin" : 243,
+              "xmax" : 690,
+              "ymax" : 380,
+              "x" : 599.5,
+              "y" : 311.5,
+              "confidence" : 0.84
+            },
+            {
+              "trackerID" : 14,
+              "class" : "car",
+              "xmin" : 670,
+              "ymin" : 212,
+              "xmax" : 887,
+              "ymax" : 306,
+              "x" : 778.5,
+              "y" : 259.0,
+              "confidence" : 0.73
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1618,
+              "ymax" : 922,
+              "x" : 1590.5,
+              "y" : 876.5,
+              "confidence" : 0.58
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 859,
+              "ymin" : 43,
+              "xmax" : 1028,
+              "ymax" : 130,
+              "x" : 943.5,
+              "y" : 86.5,
+              "confidence" : 0.67
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1469,
+              "ymin" : 394,
+              "xmax" : 1669,
+              "ymax" : 486,
+              "x" : 1569.0,
+              "y" : 440.0,
+              "confidence" : 0.58
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1003,
+              "ymin" : 168,
+              "xmax" : 1202,
+              "ymax" : 238,
+              "x" : 1102.5,
+              "y" : 203.0,
+              "confidence" : 0.57
+            },
+            {
+              "trackerID" : 28,
+              "class" : "person",
+              "xmin" : 381,
+              "ymin" : 454,
+              "xmax" : 420,
+              "ymax" : 554,
+              "x" : 400.5,
+              "y" : 504.0,
+              "confidence" : 0.6
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "64",
+        "_score" : 1.9323502,
+        "_source" : {
+          "frame" : "64",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 584,
+              "ymin" : 662,
+              "xmax" : 843,
+              "ymax" : 820,
+              "x" : 713.5,
+              "y" : 741.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 808,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 733,
+              "x" : 950.0,
+              "y" : 671.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 804,
+              "ymin" : 468,
+              "xmax" : 1029,
+              "ymax" : 569,
+              "x" : 916.5,
+              "y" : 518.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 897,
+              "ymin" : 866,
+              "xmax" : 1190,
+              "ymax" : 1014,
+              "x" : 1043.5,
+              "y" : 940.0,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 715,
+              "ymin" : 362,
+              "xmax" : 921,
+              "ymax" : 443,
+              "x" : 818.0,
+              "y" : 402.5,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 561,
+              "ymin" : 554,
+              "xmax" : 799,
+              "ymax" : 698,
+              "x" : 680.0,
+              "y" : 626.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 801,
+              "ymin" : 544,
+              "xmax" : 1035,
+              "ymax" : 627,
+              "x" : 918.0,
+              "y" : 585.5,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 870,
+              "ymin" : 760,
+              "xmax" : 1146,
+              "ymax" : 883,
+              "x" : 1008.0,
+              "y" : 821.5,
+              "confidence" : 0.93
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 652,
+              "ymin" : 154,
+              "xmax" : 814,
+              "ymax" : 216,
+              "x" : 733.0,
+              "y" : 185.0,
+              "confidence" : 0.91
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 717,
+              "ymin" : 302,
+              "xmax" : 908,
+              "ymax" : 383,
+              "x" : 812.5,
+              "y" : 342.5,
+              "confidence" : 0.86
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 489,
+              "ymin" : 135,
+              "xmax" : 652,
+              "ymax" : 237,
+              "x" : 570.5,
+              "y" : 186.0,
+              "confidence" : 0.85
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1349,
+              "ymin" : 298,
+              "xmax" : 1508,
+              "ymax" : 375,
+              "x" : 1428.5,
+              "y" : 336.5,
+              "confidence" : 0.79
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 509,
+              "ymin" : 242,
+              "xmax" : 692,
+              "ymax" : 378,
+              "x" : 600.5,
+              "y" : 310.0,
+              "confidence" : 0.86
+            },
+            {
+              "trackerID" : 14,
+              "class" : "car",
+              "xmin" : 671,
+              "ymin" : 213,
+              "xmax" : 887,
+              "ymax" : 305,
+              "x" : 779.0,
+              "y" : 259.0,
+              "confidence" : 0.7
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1564,
+              "ymin" : 831,
+              "xmax" : 1617,
+              "ymax" : 920,
+              "x" : 1590.5,
+              "y" : 875.5,
+              "confidence" : 0.58
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 43,
+              "xmax" : 1027,
+              "ymax" : 128,
+              "x" : 942.5,
+              "y" : 85.5,
+              "confidence" : 0.68
+            },
+            {
+              "trackerID" : 21,
+              "class" : "car",
+              "xmin" : 1475,
+              "ymin" : 395,
+              "xmax" : 1672,
+              "ymax" : 484,
+              "x" : 1573.5,
+              "y" : 439.5,
+              "confidence" : 0.65
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1003,
+              "ymin" : 168,
+              "xmax" : 1203,
+              "ymax" : 238,
+              "x" : 1103.0,
+              "y" : 203.0,
+              "confidence" : 0.53
+            },
+            {
+              "trackerID" : 28,
+              "class" : "person",
+              "xmin" : 383,
+              "ymin" : 485,
+              "xmax" : 416,
+              "ymax" : 565,
+              "x" : 399.5,
+              "y" : 525.0,
+              "confidence" : 0.53
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "126",
+        "_score" : 1.9323502,
+        "_source" : {
+          "frame" : "126",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 584,
+              "ymin" : 660,
+              "xmax" : 846,
+              "ymax" : 819,
+              "x" : 715.0,
+              "y" : 739.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 809,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 733,
+              "x" : 950.5,
+              "y" : 671.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 804,
+              "ymin" : 468,
+              "xmax" : 1029,
+              "ymax" : 567,
+              "x" : 916.5,
+              "y" : 517.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 898,
+              "ymin" : 867,
+              "xmax" : 1189,
+              "ymax" : 1012,
+              "x" : 1043.5,
+              "y" : 939.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 713,
+              "ymin" : 362,
+              "xmax" : 923,
+              "ymax" : 444,
+              "x" : 818.0,
+              "y" : 403.0,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 555,
+              "xmax" : 799,
+              "ymax" : 697,
+              "x" : 681.0,
+              "y" : 626.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 802,
+              "ymin" : 544,
+              "xmax" : 1035,
+              "ymax" : 626,
+              "x" : 918.5,
+              "y" : 585.0,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 871,
+              "ymin" : 760,
+              "xmax" : 1145,
+              "ymax" : 882,
+              "x" : 1008.0,
+              "y" : 821.0,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 653,
+              "ymin" : 154,
+              "xmax" : 813,
+              "ymax" : 217,
+              "x" : 733.0,
+              "y" : 185.5,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 717,
+              "ymin" : 301,
+              "xmax" : 914,
+              "ymax" : 381,
+              "x" : 815.5,
+              "y" : 341.0,
+              "confidence" : 0.88
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 490,
+              "ymin" : 137,
+              "xmax" : 650,
+              "ymax" : 235,
+              "x" : 570.0,
+              "y" : 186.0,
+              "confidence" : 0.86
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1348,
+              "ymin" : 297,
+              "xmax" : 1505,
+              "ymax" : 376,
+              "x" : 1426.5,
+              "y" : 336.5,
+              "confidence" : 0.75
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 509,
+              "ymin" : 242,
+              "xmax" : 693,
+              "ymax" : 377,
+              "x" : 601.0,
+              "y" : 309.5,
+              "confidence" : 0.87
+            },
+            {
+              "trackerID" : 14,
+              "class" : "car",
+              "xmin" : 672,
+              "ymin" : 214,
+              "xmax" : 887,
+              "ymax" : 306,
+              "x" : 779.5,
+              "y" : 260.0,
+              "confidence" : 0.71
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1618,
+              "ymax" : 921,
+              "x" : 1590.5,
+              "y" : 876.0,
+              "confidence" : 0.58
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 859,
+              "ymin" : 45,
+              "xmax" : 1026,
+              "ymax" : 128,
+              "x" : 942.5,
+              "y" : 86.5,
+              "confidence" : 0.51
+            },
+            {
+              "trackerID" : 22,
+              "class" : "car",
+              "xmin" : 860,
+              "ymin" : 44,
+              "xmax" : 1026,
+              "ymax" : 128,
+              "x" : 943.0,
+              "y" : 86.0,
+              "confidence" : 0.65
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1001,
+              "ymin" : 166,
+              "xmax" : 1203,
+              "ymax" : 239,
+              "x" : 1102.0,
+              "y" : 202.5,
+              "confidence" : 0.61
+            },
+            {
+              "trackerID" : 28,
+              "class" : "person",
+              "xmin" : 379,
+              "ymin" : 560,
+              "xmax" : 418,
+              "ymax" : 651,
+              "x" : 398.5,
+              "y" : 605.5,
+              "confidence" : 0.51
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "127",
+        "_score" : 1.9323502,
+        "_source" : {
+          "frame" : "127",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 584,
+              "ymin" : 660,
+              "xmax" : 846,
+              "ymax" : 819,
+              "x" : 715.0,
+              "y" : 739.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 809,
+              "ymin" : 609,
+              "xmax" : 1092,
+              "ymax" : 733,
+              "x" : 950.5,
+              "y" : 671.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 804,
+              "ymin" : 468,
+              "xmax" : 1029,
+              "ymax" : 567,
+              "x" : 916.5,
+              "y" : 517.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 898,
+              "ymin" : 867,
+              "xmax" : 1189,
+              "ymax" : 1012,
+              "x" : 1043.5,
+              "y" : 939.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 713,
+              "ymin" : 362,
+              "xmax" : 924,
+              "ymax" : 445,
+              "x" : 818.5,
+              "y" : 403.5,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 555,
+              "xmax" : 799,
+              "ymax" : 697,
+              "x" : 681.0,
+              "y" : 626.0,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 802,
+              "ymin" : 544,
+              "xmax" : 1035,
+              "ymax" : 626,
+              "x" : 918.5,
+              "y" : 585.0,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 871,
+              "ymin" : 760,
+              "xmax" : 1145,
+              "ymax" : 882,
+              "x" : 1008.0,
+              "y" : 821.0,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 654,
+              "ymin" : 154,
+              "xmax" : 812,
+              "ymax" : 216,
+              "x" : 733.0,
+              "y" : 185.0,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 716,
+              "ymin" : 301,
+              "xmax" : 914,
+              "ymax" : 381,
+              "x" : 815.0,
+              "y" : 341.0,
+              "confidence" : 0.88
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 490,
+              "ymin" : 137,
+              "xmax" : 650,
+              "ymax" : 235,
+              "x" : 570.0,
+              "y" : 186.0,
+              "confidence" : 0.85
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1348,
+              "ymin" : 297,
+              "xmax" : 1505,
+              "ymax" : 376,
+              "x" : 1426.5,
+              "y" : 336.5,
+              "confidence" : 0.77
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 512,
+              "ymin" : 247,
+              "xmax" : 690,
+              "ymax" : 377,
+              "x" : 601.0,
+              "y" : 312.0,
+              "confidence" : 0.85
+            },
+            {
+              "trackerID" : 14,
+              "class" : "car",
+              "xmin" : 672,
+              "ymin" : 214,
+              "xmax" : 887,
+              "ymax" : 306,
+              "x" : 779.5,
+              "y" : 260.0,
+              "confidence" : 0.71
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1563,
+              "ymin" : 831,
+              "xmax" : 1618,
+              "ymax" : 921,
+              "x" : 1590.5,
+              "y" : 876.0,
+              "confidence" : 0.58
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 859,
+              "ymin" : 45,
+              "xmax" : 1026,
+              "ymax" : 128,
+              "x" : 942.5,
+              "y" : 86.5,
+              "confidence" : 0.51
+            },
+            {
+              "trackerID" : 22,
+              "class" : "car",
+              "xmin" : 859,
+              "ymin" : 44,
+              "xmax" : 1027,
+              "ymax" : 128,
+              "x" : 943.0,
+              "y" : 86.0,
+              "confidence" : 0.65
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1002,
+              "ymin" : 166,
+              "xmax" : 1202,
+              "ymax" : 238,
+              "x" : 1102.0,
+              "y" : 202.0,
+              "confidence" : 0.59
+            },
+            {
+              "trackerID" : 28,
+              "class" : "person",
+              "xmin" : 379,
+              "ymin" : 560,
+              "xmax" : 418,
+              "ymax" : 651,
+              "x" : 398.5,
+              "y" : 605.5,
+              "confidence" : 0.62
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "dexter",
+        "_type" : "frame",
+        "_id" : "128",
+        "_score" : 1.9323502,
+        "_source" : {
+          "frame" : "128",
+          "objects" : [
+            {
+              "trackerID" : 1,
+              "class" : "car",
+              "xmin" : 584,
+              "ymin" : 660,
+              "xmax" : 846,
+              "ymax" : 819,
+              "x" : 715.0,
+              "y" : 739.5,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 2,
+              "class" : "car",
+              "xmin" : 808,
+              "ymin" : 609,
+              "xmax" : 1093,
+              "ymax" : 733,
+              "x" : 950.5,
+              "y" : 671.0,
+              "confidence" : 0.99
+            },
+            {
+              "trackerID" : 3,
+              "class" : "car",
+              "xmin" : 804,
+              "ymin" : 468,
+              "xmax" : 1029,
+              "ymax" : 568,
+              "x" : 916.5,
+              "y" : 518.0,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 4,
+              "class" : "car",
+              "xmin" : 898,
+              "ymin" : 867,
+              "xmax" : 1189,
+              "ymax" : 1012,
+              "x" : 1043.5,
+              "y" : 939.5,
+              "confidence" : 0.98
+            },
+            {
+              "trackerID" : 5,
+              "class" : "car",
+              "xmin" : 714,
+              "ymin" : 362,
+              "xmax" : 924,
+              "ymax" : 445,
+              "x" : 819.0,
+              "y" : 403.5,
+              "confidence" : 0.97
+            },
+            {
+              "trackerID" : 6,
+              "class" : "car",
+              "xmin" : 563,
+              "ymin" : 555,
+              "xmax" : 799,
+              "ymax" : 696,
+              "x" : 681.0,
+              "y" : 625.5,
+              "confidence" : 0.96
+            },
+            {
+              "trackerID" : 7,
+              "class" : "car",
+              "xmin" : 801,
+              "ymin" : 544,
+              "xmax" : 1036,
+              "ymax" : 627,
+              "x" : 918.5,
+              "y" : 585.5,
+              "confidence" : 0.95
+            },
+            {
+              "trackerID" : 8,
+              "class" : "car",
+              "xmin" : 872,
+              "ymin" : 760,
+              "xmax" : 1146,
+              "ymax" : 882,
+              "x" : 1009.0,
+              "y" : 821.0,
+              "confidence" : 0.94
+            },
+            {
+              "trackerID" : 9,
+              "class" : "car",
+              "xmin" : 654,
+              "ymin" : 154,
+              "xmax" : 813,
+              "ymax" : 216,
+              "x" : 733.5,
+              "y" : 185.0,
+              "confidence" : 0.92
+            },
+            {
+              "trackerID" : 10,
+              "class" : "car",
+              "xmin" : 716,
+              "ymin" : 301,
+              "xmax" : 914,
+              "ymax" : 381,
+              "x" : 815.0,
+              "y" : 341.0,
+              "confidence" : 0.88
+            },
+            {
+              "trackerID" : 11,
+              "class" : "car",
+              "xmin" : 490,
+              "ymin" : 136,
+              "xmax" : 650,
+              "ymax" : 235,
+              "x" : 570.0,
+              "y" : 185.5,
+              "confidence" : 0.87
+            },
+            {
+              "trackerID" : 12,
+              "class" : "car",
+              "xmin" : 1348,
+              "ymin" : 297,
+              "xmax" : 1505,
+              "ymax" : 376,
+              "x" : 1426.5,
+              "y" : 336.5,
+              "confidence" : 0.76
+            },
+            {
+              "trackerID" : 13,
+              "class" : "car",
+              "xmin" : 512,
+              "ymin" : 246,
+              "xmax" : 690,
+              "ymax" : 377,
+              "x" : 601.0,
+              "y" : 311.5,
+              "confidence" : 0.86
+            },
+            {
+              "trackerID" : 14,
+              "class" : "car",
+              "xmin" : 672,
+              "ymin" : 214,
+              "xmax" : 887,
+              "ymax" : 306,
+              "x" : 779.5,
+              "y" : 260.0,
+              "confidence" : 0.71
+            },
+            {
+              "trackerID" : 15,
+              "class" : "car",
+              "xmin" : 1564,
+              "ymin" : 831,
+              "xmax" : 1618,
+              "ymax" : 921,
+              "x" : 1591.0,
+              "y" : 876.0,
+              "confidence" : 0.59
+            },
+            {
+              "trackerID" : 16,
+              "class" : "truck",
+              "xmin" : 858,
+              "ymin" : 45,
+              "xmax" : 1026,
+              "ymax" : 128,
+              "x" : 942.0,
+              "y" : 86.5,
+              "confidence" : 0.51
+            },
+            {
+              "trackerID" : 22,
+              "class" : "car",
+              "xmin" : 858,
+              "ymin" : 44,
+              "xmax" : 1027,
+              "ymax" : 128,
+              "x" : 942.5,
+              "y" : 86.0,
+              "confidence" : 0.65
+            },
+            {
+              "trackerID" : 23,
+              "class" : "car",
+              "xmin" : 1002,
+              "ymin" : 166,
+              "xmax" : 1202,
+              "ymax" : 238,
+              "x" : 1102.0,
+              "y" : 202.0,
+              "confidence" : 0.6
+            },
+            {
+              "trackerID" : 28,
+              "class" : "person",
+              "xmin" : 379,
+              "ymin" : 561,
+              "xmax" : 418,
+              "ymax" : 653,
+              "x" : 398.5,
+              "y" : 607.0,
+              "confidence" : 0.73
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
