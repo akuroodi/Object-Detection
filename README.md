@@ -2,7 +2,8 @@
 
 Contains a few different Python programs to detect objects in both images and video files using the YOLOv3 object detector
 
-Based off of the following tutorial: https://www.thepythoncode.com/article/yolo-object-detection-with-opencv-and-pytorch-in-python
+Image detector off of the following tutorial: https://www.thepythoncode.com/article/yolo-object-detection-with-opencv-and-pytorch-in-python
+Video detection can be found on Colab: https://colab.research.google.com/drive/1zmeSTP3J5zu2d5fHgsQC06DyYEYJFXq1?usp=sharing
 
 Modifications/Extensions:
 - Sequentially performs detection on all images in a user-specified "/images" folder in the project directory
