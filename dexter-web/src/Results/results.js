@@ -55,7 +55,7 @@ export default function Results(props) {
                 <Button variant="contained"
                     onClick={(e) => handleOpen(result.startTime)}
                 >
-                    {new Date(result.startTime * 1000).toISOString().substr(11, 8)}
+                    {"Score: " + result.score + " Time: " + new Date(result.startTime * 1000).toISOString().substr(11, 12)}
                 </Button>
             </div>
         );
