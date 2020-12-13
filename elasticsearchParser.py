@@ -50,7 +50,7 @@ for line in lines:
         frames[-1]["objects"].append(obj)
 
 # open file to write
-outputFile = open("elasticsearchInput/elasticsearch_bulk_input.txt", "w")
+outputFile = open("elasticsearchInput/elasticsearch_bulk_" + sys.argv[1].lower(), "w")
 
 for frame in frames:
     # write new index to file
