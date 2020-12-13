@@ -8,6 +8,9 @@ export async function queryES(queryJSON) {
         body: JSON.stringify(queryJSON)
     }).then(res => res.json()).then(json => {
         return json.hits.hits;
+    }).catch(e => {
+        alert("Failed to Connect to ElasticSearch Server");
+        return [];
     });
     return resultObjs;
 }

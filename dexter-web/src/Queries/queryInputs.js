@@ -58,8 +58,8 @@ export default function QueryInputs(props) {
                     {"Found " + numResults + " results in " + queryTime + " ms"}
                 </Typography>
             ) : (
-                    <Button variant="outlined" onClick={handleQuery}> RUN </Button>
-                ))}
+                <Button variant="outlined" onClick={handleQuery}> RUN </Button>
+            ))}
 
         </div>
     );
