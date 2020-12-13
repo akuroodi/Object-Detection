@@ -10,12 +10,19 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
+import logo from './logo.png';
 
 import VideoSelect from './Inputs/videoSelect';
 import QueryInputs from './Queries/queryInputs';
 import Results from './Results/results';
 
 const useStyles = makeStyles((theme) => ({
+  logo: {
+    maxWidth: 40,
+    maxHeight: 40,
+    marginLeft: theme.spacing(0),
+    marginRight: theme.spacing(2)
+  },
   icon: {
     marginRight: theme.spacing(2),
   },
@@ -48,11 +55,11 @@ function getSteps() {
 function getStepContent(stepIndex, setDisableNext, selectedVideo, setSelectedVideo, results, setResults) {
   switch (stepIndex) {
     case 0:
-      return <VideoSelect setDisableNext={setDisableNext} setSelectedVideo={setSelectedVideo}/>;
+      return <VideoSelect setDisableNext={setDisableNext} setSelectedVideo={setSelectedVideo} />;
     case 1:
-      return <QueryInputs setDisableNext={setDisableNext} selectedVideo={selectedVideo} setResults={setResults}/>;
+      return <QueryInputs setDisableNext={setDisableNext} selectedVideo={selectedVideo} setResults={setResults} />;
     case 2:
-      return <Results results={results} selectedVideo={selectedVideo}/>;
+      return <Results results={results} selectedVideo={selectedVideo} />;
     default:
       return 'Unknown stepIndex';
   }
@@ -86,7 +93,8 @@ function App() {
       <CssBaseline />
       <AppBar position="sticky" color="primary">
         <Toolbar>
-          <Typography variant="h4" color="inherit" noWrap>
+          <img src={logo} className={classes.logo} alt="" />
+          <Typography variant="h5" color="textPrimary" noWrap>
             Dexter
           </Typography>
         </Toolbar>
@@ -99,7 +107,7 @@ function App() {
         ))}
       </Stepper>
       <Container maxWidth="sm" justify="center" className={classes.mainContainer}>
-      {/* <Grid container justify="center"> */}
+        {/* <Grid container justify="center"> */}
 
         {activeStep === steps.length ? (
           <div>
@@ -119,10 +127,10 @@ function App() {
                 >
                   Back
                 </Button>
-                <Button 
+                <Button
                   disabled={disableNext && activeStep !== steps.length - 1}
-                  variant="contained" 
-                  color="primary" 
+                  variant="contained"
+                  color="primary"
                   onClick={handleNext}
                 >
                   {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
@@ -131,7 +139,7 @@ function App() {
             </div>
           )}
 
-      {/* </Grid> */}
+        {/* </Grid> */}
       </Container>
       {/* <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>

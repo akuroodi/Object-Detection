@@ -3,6 +3,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
+import Inputs from './inputs';
+
 import { queryES, objsToRes } from './queryHandlers';
 
 const sampleQuery = {
@@ -22,8 +24,11 @@ export default function QueryInputs(props) {
     const [queryTime, setQueryTime] = React.useState(0);
     const [numResults, setNumResults] = React.useState(0);
 
+    const [query, setQuery] = React.useState({});
 
     const handleQuery = () => {
+        console.log(query);
+
         const queryStart = Date.now();
         const resultObjs = queryES(sampleQuery);
         const queryTime = (Date.now() - queryStart);
@@ -43,8 +48,8 @@ export default function QueryInputs(props) {
 
     return (
         <div>
-            <h1>Query Input</h1>
-
+            <h1>Query Inputs</h1>
+            <Inputs setQuery={setQuery}/>
 
             {isFetching ? (
                 <LinearProgress />
@@ -53,7 +58,7 @@ export default function QueryInputs(props) {
                     {"Found " + numResults + " results in " + queryTime + " ms"}
                 </Typography>
             ) : (
-                    <Button onClick={handleQuery}> query </Button>
+                    <Button variant="outlined" onClick={handleQuery}> RUN </Button>
                 ))}
 
         </div>
