@@ -1,7 +1,8 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
@@ -30,20 +31,28 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(1),
     alignContent: "center"
   },
+  mainContainer: {
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(10)
+  },
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(2),
+  },
 }));
 
 function getSteps() {
   return ['Select a Video', 'Query for a Scene', 'View the Results'];
 }
 
-function getStepContent(stepIndex, setDisableNext, results, setResults) {
+function getStepContent(stepIndex, setDisableNext, selectedVideo, setSelectedVideo, results, setResults) {
   switch (stepIndex) {
     case 0:
-      return <VideoSelect setDisableNext={setDisableNext}/>;
+      return <VideoSelect setDisableNext={setDisableNext} setSelectedVideo={setSelectedVideo}/>;
     case 1:
-      return <QueryInputs setDisableNext={setDisableNext} setResults={setResults}/>;
+      return <QueryInputs setDisableNext={setDisableNext} selectedVideo={selectedVideo} setResults={setResults}/>;
     case 2:
-      return <Results results={results}/>;
+      return <Results results={results} selectedVideo={selectedVideo}/>;
     default:
       return 'Unknown stepIndex';
   }
@@ -52,6 +61,7 @@ function getStepContent(stepIndex, setDisableNext, results, setResults) {
 function App() {
   const classes = useStyles();
 
+  const [selectedVideo, setSelectedVideo] = React.useState(null);
   const [results, setResults] = React.useState([]);
 
   const [disableNext, setDisableNext] = React.useState(true);
@@ -74,7 +84,7 @@ function App() {
   return (
     <div>
       <CssBaseline />
-      <AppBar position="static" color="primary">
+      <AppBar position="sticky" color="primary">
         <Toolbar>
           <Typography variant="h4" color="inherit" noWrap>
             Dexter
@@ -88,7 +98,8 @@ function App() {
           </Step>
         ))}
       </Stepper>
-      <Grid container justify="center">
+      <Container maxWidth="sm" justify="center" className={classes.mainContainer}>
+      {/* <Grid container justify="center"> */}
 
         {activeStep === steps.length ? (
           <div>
@@ -98,7 +109,7 @@ function App() {
         ) : (
             <div>
               <div className={classes.instructions}>
-                {getStepContent(activeStep, setDisableNext, results, setResults)}
+                {getStepContent(activeStep, setDisableNext, selectedVideo, setSelectedVideo, results, setResults)}
               </div>
               <div>
                 <Button
@@ -120,7 +131,16 @@ function App() {
             </div>
           )}
 
-      </Grid>
+      {/* </Grid> */}
+      </Container>
+      {/* <footer className={classes.footer}>
+        <Typography variant="h6" align="center" gutterBottom>
+          Dexter
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+          UCLA
+        </Typography>
+      </footer> */}
     </div>
   );
 }
