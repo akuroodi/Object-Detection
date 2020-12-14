@@ -19,10 +19,15 @@ inputFile = open(sys.argv[1], "r")
 lines = [line.strip() for line in inputFile.readlines() if "Frame #" in line or "Tracker ID" in line]
 
 frames = []
+objCounts = {}
 for line in lines:
     # new frame
     if line.startswith("Frame"):
+        if len(frames) != 0:
+            frames[-1]["objectCounts"] = objCounts
+            objCounts = {}
         frames.append({"frame" : str(line[line.rindex(' ')+1:]), "objects" : []})
+
 
     # more objects from previous frame
     else:
@@ -38,7 +43,7 @@ for line in lines:
         # Save to objects list
         obj = {}
         obj["trackerID"] = ints[0]
-        obj["class"] = classPair[1].strip()
+        obj["class"] = classPair[1].strip().replace(' ', '_')
         obj["xmin"] = ints[1]
         obj["ymin"] = ints[2]
         obj["xmax"] = ints[3]
@@ -48,6 +53,13 @@ for line in lines:
         obj["confidence"] = confidence
         # Append obj to frame
         frames[-1]["objects"].append(obj)
+
+        if classPair[1].strip() not in objCounts:
+            objCounts[classPair[1].strip()] = 1
+        else:
+            objCounts[classPair[1].strip()] += 1
+
+frames[-1]["objectCounts"] = objCounts
 
 # open file to write
 outputFile = open("elasticsearchInput/elasticsearch_bulk_" + sys.argv[1].lower(), "w")
