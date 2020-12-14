@@ -6,6 +6,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import Inputs from './inputs';
 
 import { queryES, objsToRes } from './queryHandlers';
+import getESquery from './interpreter';
 
 
 export default function QueryInputs(props) {
@@ -18,25 +19,25 @@ export default function QueryInputs(props) {
 
     const handleQuery = () => {
         console.log(query);
+        const ESquery = getESquery(query);
+        console.log(ESquery);
 
         const queryStart = Date.now();
-        const resultObjs = queryES("A", query);
+        const resultObjs = queryES(props.selectedVideo, ESquery);
         const queryTime = (Date.now() - queryStart);
 
-        console.log(resultObjs);
-        if (resultObjs !== null) {
-            objsToRes(resultObjs, 30).then(results => {
-                console.log(results);
-    
-                props.setResults(results);
-    
-                setQueryTime(queryTime);
-                setNumResults(results.length);
-                setDoneQuery(true);
-                setIsFetching(false);
-                props.setDisableNext(false)
-            });
-        }
+        objsToRes(resultObjs, 30).then(results => {
+            console.log(results);
+            if (results == null) return;
+
+            props.setResults(results);
+
+            setQueryTime(queryTime);
+            setNumResults(results.length);
+            setDoneQuery(true);
+            setIsFetching(false);
+            props.setDisableNext(false)
+        });
     }
 
     return (

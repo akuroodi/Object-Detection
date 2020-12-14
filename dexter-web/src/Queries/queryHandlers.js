@@ -1,6 +1,7 @@
 
-export async function queryES(videoName, queryJSON) {
-    const resultObjs = await fetch("http://localhost:9200/dexter/_search?pretty", {
+export async function queryES(videoUrl, queryJSON) {
+    const videoName = getVideoName(videoUrl);
+    const resultObjs = await fetch("http://localhost:9200/" + videoName + "/_search?pretty", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -18,6 +19,7 @@ export async function queryES(videoName, queryJSON) {
 export async function objsToRes(objs, fps) {
     objs = await objs;
     console.log(objs);
+    if (objs === null) return null;
 
     const results = objs.map(obj => {
         const source = obj._source;
@@ -35,4 +37,10 @@ export async function objsToRes(objs, fps) {
 
 function frameToSecond(frame, fps) {
     return frame / fps;
+}
+
+function getVideoName(videoUrl) {
+    const startIdx = videoUrl.lastIndexOf("/");
+    const endIdx = videoUrl.lastIndexOf(".");
+    return videoUrl.substring(startIdx+1, endIdx).toLowerCase();
 }

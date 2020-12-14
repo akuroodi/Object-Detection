@@ -13,12 +13,8 @@ import { Player } from 'video-react';
 
 import VideoUpload from './videoUpload';
 
-import videoA from '../DemoFiles/A.mp4';
-import videoB from '../DemoFiles/B.mp4';
-import videoC from '../DemoFiles/C.mp4';
-import videoD from '../DemoFiles/D.mp4';
-
-const videos = [videoA, videoB, videoC, videoD];
+const videoRoot = process.env.PUBLIC_URL + "/DemoFiles/";
+const videoUrls = [videoRoot + "A.mp4", videoRoot + "B.mp4", videoRoot + "C.mp4", videoRoot + "D.mp4", videoRoot + "E.mp4"];
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -45,7 +41,7 @@ export default function VideoSelect(props) {
         props.setDisableNext(false);
     }
 
-    const videoCards = videos.map((videoUrl, i) => {
+    const videoCards = videoUrls.map((videoUrl, i) => {
         return (
             <Card key={i}>
                 <CardActionArea>

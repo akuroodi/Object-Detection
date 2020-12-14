@@ -11,7 +11,6 @@ import Divider from '@material-ui/core/Divider';
 
 import objectClasses from './objectClasses';
 
-import getESquery from './interpreter';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -27,6 +26,7 @@ const defaultTarget = {
     relation: "INCLUDE",
     objClass: "",
     property: "",
+    equality: "=",
     value: ""
 };
 
@@ -36,6 +36,7 @@ export default function Inputs(props) {
     const [targets, setTargets] = React.useState([Object.assign({}, defaultTarget)]);
     const [limit, setLimit] = React.useState("");
     const [orderby, setOrderBy] = React.useState("");
+    const [order, setOrder] = React.useState("");
 
     const objClassItems = objectClasses().map((objClass, i) => (
         <MenuItem key={i} value={objClass}>{objClass}</MenuItem>
@@ -143,11 +144,19 @@ export default function Inputs(props) {
                 <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
-                    value={targets[i].property ? "=" : ""}
-                // onChange={}
+                    value={targets[i].equality}
+                    onChange={(e) => setTargets((pre) => {
+                        let next = [...pre];
+                        next[i].equality = e.target.value
+                        return next;
+                    })}
                 >
                     <MenuItem value=""><em>None</em></MenuItem>
                     <MenuItem value="=">=</MenuItem>
+                    <MenuItem value="gte">{">="}</MenuItem>
+                    <MenuItem value="lte">{"<="}</MenuItem>
+                    <MenuItem value="gt">{">"}</MenuItem>
+                    <MenuItem value="lt">{"<"}</MenuItem>
                 </Select>
             </FormControl>
 
@@ -188,27 +197,46 @@ export default function Inputs(props) {
     );
 
     const orderbyComponent = (
-        <FormControl className={classes.formControl}>
-            <InputLabel id="demo-simple-select-helper-label">Order By</InputLabel>
-            <Select
-                labelId="demo-simple-select-helper-label"
-                id="demo-simple-select-helper"
-                value={orderby}
-                onChange={(e) => setOrderBy(e.target.value)}
-            >
-                <MenuItem value={""}><em>None</em></MenuItem>
-                <MenuItem value={"Distance"}>Distance</MenuItem>
-            </Select>
-            <FormHelperText>Order of Results</FormHelperText>
-        </FormControl>
+        <div>
+            <FormControl className={classes.formControl}>
+                <InputLabel id="demo-simple-select-helper-label">Order By</InputLabel>
+                <Select
+                    labelId="demo-simple-select-helper-label"
+                    id="demo-simple-select-helper"
+                    value={orderby}
+                    onChange={(e) => setOrderBy(e.target.value)}
+                >
+                    <MenuItem value={""}><em>None</em></MenuItem>
+                    <MenuItem value={"SCORE"}>Score</MenuItem>
+                    <MenuItem value={"DISTANCE"}>Distance</MenuItem>
+                </Select>
+                <FormHelperText>Order of Results</FormHelperText>
+            </FormControl>
+
+            <FormControl className={classes.formControl}>
+                <InputLabel id="demo-simple-select-helper-label">Order</InputLabel>
+                <Select
+                    labelId="demo-simple-select-helper-label"
+                    id="demo-simple-select-helper"
+                    value={order}
+                    onChange={(e) => setOrder(e.target.value)}
+                >
+                    <MenuItem value={""}><em>None</em></MenuItem>
+                    <MenuItem value={"asc"}>ASC</MenuItem>
+                    <MenuItem value={"desc"}>DESC</MenuItem>
+                </Select>
+                <FormHelperText>Order of Results</FormHelperText>
+            </FormControl>
+
+
+        </div>
     );
 
     useEffect(() => {
-        // Update ESQuery
-        const ESquery = getESquery({targets: targets, limit: limit, orderby: orderby});
-        props.setQuery(ESquery);
-// eslint-disable-next-line
-    }, [targets, limit, orderby]);
+        // Update rawQuery
+        props.setQuery({ targets: targets, limit: limit, orderby: orderby , order: order});
+        // eslint-disable-next-line
+    }, [targets, limit, orderby, order]);
 
     const handleAdd = () => {
         setTargets((pre) => ([...pre, Object.assign({}, defaultTarget)]));
@@ -233,9 +261,10 @@ export default function Inputs(props) {
                 Delete
             </Button>
             {targets.map((target, i) => targetComponent(i))}
+            
             <Divider />
-            {limitComponent}
             {orderbyComponent}
+            {limitComponent}
         </div>
     );
 }
