@@ -1,0 +1,509 @@
+{
+  "took" : 121,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 51,
+      "relation" : "eq"
+    },
+    "max_score" : 2.7138386,
+    "hits" : [
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2613",
+        "_score" : 2.7138386,
+        "_source" : {
+          "frame" : "2613",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 720,
+              "ymin" : 631,
+              "xmax" : 1032,
+              "ymax" : 1011,
+              "x" : 876.0,
+              "y" : 821.0,
+              "confidence" : 0.9866116046905518
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 626,
+              "ymin" : 85,
+              "xmax" : 1204,
+              "ymax" : 596,
+              "x" : 915.0,
+              "y" : 340.5,
+              "confidence" : 0.8422184586524963
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 57,
+              "ymin" : 36,
+              "xmax" : 1854,
+              "ymax" : 1077,
+              "x" : 955.5,
+              "y" : 556.5,
+              "confidence" : 0.8850086331367493
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2608",
+        "_score" : 2.6970122,
+        "_source" : {
+          "frame" : "2608",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 644,
+              "ymin" : 610,
+              "xmax" : 963,
+              "ymax" : 993,
+              "x" : 803.5,
+              "y" : 801.5,
+              "confidence" : 0.9926395416259766
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 555,
+              "ymin" : 81,
+              "xmax" : 1136,
+              "ymax" : 596,
+              "x" : 845.5,
+              "y" : 338.5,
+              "confidence" : 0.7423440217971802
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 55,
+              "ymin" : 26,
+              "xmax" : 1868,
+              "ymax" : 1079,
+              "x" : 961.5,
+              "y" : 552.5,
+              "confidence" : 0.9620285630226135
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2609",
+        "_score" : 2.682767,
+        "_source" : {
+          "frame" : "2609",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 654,
+              "ymin" : 610,
+              "xmax" : 977,
+              "ymax" : 998,
+              "x" : 815.5,
+              "y" : 804.0,
+              "confidence" : 0.9941062927246094
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 566,
+              "ymin" : 84,
+              "xmax" : 1139,
+              "ymax" : 594,
+              "x" : 852.5,
+              "y" : 339.0,
+              "confidence" : 0.7251334190368652
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 69,
+              "ymin" : 40,
+              "xmax" : 1857,
+              "ymax" : 1073,
+              "x" : 963.0,
+              "y" : 556.5,
+              "confidence" : 0.9635272026062012
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2610",
+        "_score" : 2.654968,
+        "_source" : {
+          "frame" : "2610",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 671,
+              "ymin" : 613,
+              "xmax" : 988,
+              "ymax" : 996,
+              "x" : 829.5,
+              "y" : 804.5,
+              "confidence" : 0.9945079684257507
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 572,
+              "ymin" : 83,
+              "xmax" : 1148,
+              "ymax" : 594,
+              "x" : 860.0,
+              "y" : 338.5,
+              "confidence" : 0.7251334190368652
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 71,
+              "ymin" : 50,
+              "xmax" : 1842,
+              "ymax" : 1070,
+              "x" : 956.5,
+              "y" : 560.0,
+              "confidence" : 0.9353265762329102
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2594",
+        "_score" : 2.6193843,
+        "_source" : {
+          "frame" : "2594",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 558,
+              "ymin" : 620,
+              "xmax" : 859,
+              "ymax" : 978,
+              "x" : 708.5,
+              "y" : 799.0,
+              "confidence" : 0.9912253022193909
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 470,
+              "ymin" : 94,
+              "xmax" : 1041,
+              "ymax" : 582,
+              "x" : 755.5,
+              "y" : 338.0,
+              "confidence" : 0.6980263590812683
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 41,
+              "ymin" : 27,
+              "xmax" : 1854,
+              "ymax" : 1063,
+              "x" : 947.5,
+              "y" : 545.0,
+              "confidence" : 0.9301326870918274
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2603",
+        "_score" : 2.607831,
+        "_source" : {
+          "frame" : "2603",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 594,
+              "ymin" : 613,
+              "xmax" : 906,
+              "ymax" : 980,
+              "x" : 750.0,
+              "y" : 796.5,
+              "confidence" : 0.9934554100036621
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 500,
+              "ymin" : 87,
+              "xmax" : 1079,
+              "ymax" : 589,
+              "x" : 789.5,
+              "y" : 338.0,
+              "confidence" : 0.6561672687530518
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 37,
+              "ymin" : 5,
+              "xmax" : 1883,
+              "ymax" : 1080,
+              "x" : 960.0,
+              "y" : 542.5,
+              "confidence" : 0.9582082629203796
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2602",
+        "_score" : 2.5998719,
+        "_source" : {
+          "frame" : "2602",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 587,
+              "ymin" : 613,
+              "xmax" : 896,
+              "ymax" : 977,
+              "x" : 741.5,
+              "y" : 795.0,
+              "confidence" : 0.9910004734992981
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 497,
+              "ymin" : 86,
+              "xmax" : 1075,
+              "ymax" : 587,
+              "x" : 786.0,
+              "y" : 336.5,
+              "confidence" : 0.6903567910194397
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 41,
+              "ymin" : 14,
+              "xmax" : 1875,
+              "ymax" : 1079,
+              "x" : 958.0,
+              "y" : 546.5,
+              "confidence" : 0.9185146689414978
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2607",
+        "_score" : 2.5930755,
+        "_source" : {
+          "frame" : "2607",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 631,
+              "ymin" : 611,
+              "xmax" : 944,
+              "ymax" : 986,
+              "x" : 787.5,
+              "y" : 798.5,
+              "confidence" : 0.9943258166313171
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 541,
+              "ymin" : 82,
+              "xmax" : 1123,
+              "ymax" : 596,
+              "x" : 832.0,
+              "y" : 339.0,
+              "confidence" : 0.6455006003379822
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 39,
+              "ymin" : 11,
+              "xmax" : 1873,
+              "ymax" : 1080,
+              "x" : 956.0,
+              "y" : 545.5,
+              "confidence" : 0.9532490968704224
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2606",
+        "_score" : 2.5693667,
+        "_source" : {
+          "frame" : "2606",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 621,
+              "ymin" : 611,
+              "xmax" : 934,
+              "ymax" : 985,
+              "x" : 777.5,
+              "y" : 798.0,
+              "confidence" : 0.9925215840339661
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 531,
+              "ymin" : 85,
+              "xmax" : 1107,
+              "ymax" : 591,
+              "x" : 819.0,
+              "y" : 338.0,
+              "confidence" : 0.6191865801811218
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 39,
+              "ymin" : 12,
+              "xmax" : 1870,
+              "ymax" : 1080,
+              "x" : 954.5,
+              "y" : 546.0,
+              "confidence" : 0.957658588886261
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "2617",
+        "_score" : 2.561503,
+        "_source" : {
+          "frame" : "2617",
+          "objects" : [
+            {
+              "trackerID" : 805,
+              "class" : "knife",
+              "xmin" : 790,
+              "ymin" : 663,
+              "xmax" : 1108,
+              "ymax" : 1058,
+              "x" : 949.0,
+              "y" : 860.5,
+              "confidence" : 0.9411457777023315
+            },
+            {
+              "trackerID" : 812,
+              "class" : "handbag",
+              "xmin" : 695,
+              "ymin" : 109,
+              "xmax" : 1278,
+              "ymax" : 615,
+              "x" : 986.5,
+              "y" : 362.0,
+              "confidence" : 0.8319125175476074
+            },
+            {
+              "trackerID" : 813,
+              "class" : "bed",
+              "xmin" : 78,
+              "ymin" : 45,
+              "xmax" : 1865,
+              "ymax" : 1069,
+              "x" : 971.5,
+              "y" : 557.0,
+              "confidence" : 0.7884446382522583
+            }
+          ],
+          "objectCounts" : {
+            "knife" : 1,
+            "handbag" : 1,
+            "bed" : 1
+          }
+        }
+      }
+    ]
+  }
+}

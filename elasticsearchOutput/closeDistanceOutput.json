@@ -1,0 +1,628 @@
+{
+  "took" : 23,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 108,
+      "relation" : "eq"
+    },
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1028",
+        "_score" : 319.63104,
+        "_source" : {
+          "frame" : "1028",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 178,
+              "ymin" : 512,
+              "xmax" : 1195,
+              "ymax" : 849,
+              "x" : 686.5,
+              "y" : 680.5,
+              "confidence" : 0.998969554901123
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 1518,
+              "ymin" : 552,
+              "xmax" : 1565,
+              "ymax" : 658,
+              "x" : 1541.5,
+              "y" : 605.0,
+              "confidence" : 0.9267838001251221
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1792,
+              "ymin" : 423,
+              "xmax" : 1875,
+              "ymax" : 527,
+              "x" : 1833.5,
+              "y" : 475.0,
+              "confidence" : 0.9875407814979553
+            }
+          ],
+          "objectCounts" : {
+            "car" : 2,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          319.63104
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1045",
+        "_score" : 323.2066,
+        "_source" : {
+          "frame" : "1045",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 173,
+              "ymin" : 493,
+              "xmax" : 596,
+              "ymax" : 900,
+              "x" : 384.5,
+              "y" : 696.5,
+              "confidence" : 0.964168906211853
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 796,
+              "ymin" : 535,
+              "xmax" : 856,
+              "ymax" : 636,
+              "x" : 826.0,
+              "y" : 585.5,
+              "confidence" : 0.8519231081008911
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1024,
+              "ymin" : 419,
+              "xmax" : 1227,
+              "ymax" : 509,
+              "x" : 1125.5,
+              "y" : 464.0,
+              "confidence" : 0.9868100881576538
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1311,
+              "ymin" : 369,
+              "xmax" : 1601,
+              "ymax" : 591,
+              "x" : 1456.0,
+              "y" : 480.0,
+              "confidence" : 0.9256641268730164
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          323.2066
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1039",
+        "_score" : 324.23602,
+        "_source" : {
+          "frame" : "1039",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 178,
+              "ymin" : 508,
+              "xmax" : 828,
+              "ymax" : 927,
+              "x" : 503.0,
+              "y" : 717.5,
+              "confidence" : 0.9825392365455627
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 1008,
+              "ymin" : 539,
+              "xmax" : 1065,
+              "ymax" : 641,
+              "x" : 1036.5,
+              "y" : 590.0,
+              "confidence" : 0.5421724319458008
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1248,
+              "ymin" : 420,
+              "xmax" : 1425,
+              "ymax" : 514,
+              "x" : 1336.5,
+              "y" : 467.0,
+              "confidence" : 0.9899210333824158
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1567,
+              "ymin" : 358,
+              "xmax" : 1809,
+              "ymax" : 591,
+              "x" : 1688.0,
+              "y" : 474.5,
+              "confidence" : 0.9309004545211792
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          324.23602
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1044",
+        "_score" : 324.50308,
+        "_source" : {
+          "frame" : "1044",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 167,
+              "ymin" : 496,
+              "xmax" : 626,
+              "ymax" : 896,
+              "x" : 396.5,
+              "y" : 696.0,
+              "confidence" : 0.9697715640068054
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 825,
+              "ymin" : 534,
+              "xmax" : 884,
+              "ymax" : 635,
+              "x" : 854.5,
+              "y" : 584.5,
+              "confidence" : 0.8612014055252075
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1056,
+              "ymin" : 419,
+              "xmax" : 1256,
+              "ymax" : 510,
+              "x" : 1156.0,
+              "y" : 464.5,
+              "confidence" : 0.9924997687339783
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1347,
+              "ymin" : 368,
+              "xmax" : 1629,
+              "ymax" : 591,
+              "x" : 1488.0,
+              "y" : 479.5,
+              "confidence" : 0.9014801979064941
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          324.50308
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1043",
+        "_score" : 325.06076,
+        "_source" : {
+          "frame" : "1043",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 164,
+              "ymin" : 498,
+              "xmax" : 656,
+              "ymax" : 895,
+              "x" : 410.0,
+              "y" : 696.5,
+              "confidence" : 0.9774397611618042
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 857,
+              "ymin" : 536,
+              "xmax" : 916,
+              "ymax" : 637,
+              "x" : 886.5,
+              "y" : 586.5,
+              "confidence" : 0.802820086479187
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1089,
+              "ymin" : 419,
+              "xmax" : 1287,
+              "ymax" : 511,
+              "x" : 1188.0,
+              "y" : 465.0,
+              "confidence" : 0.9942337274551392
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1385,
+              "ymin" : 366,
+              "xmax" : 1660,
+              "ymax" : 590,
+              "x" : 1522.5,
+              "y" : 478.0,
+              "confidence" : 0.9476353526115417
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          325.06076
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1046",
+        "_score" : 326.26675,
+        "_source" : {
+          "frame" : "1046",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 170,
+              "ymin" : 488,
+              "xmax" : 557,
+              "ymax" : 892,
+              "x" : 363.5,
+              "y" : 690.0,
+              "confidence" : 0.966218888759613
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 765,
+              "ymin" : 534,
+              "xmax" : 826,
+              "ymax" : 637,
+              "x" : 795.5,
+              "y" : 585.5,
+              "confidence" : 0.8997640609741211
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 993,
+              "ymin" : 419,
+              "xmax" : 1204,
+              "ymax" : 510,
+              "x" : 1098.5,
+              "y" : 464.5,
+              "confidence" : 0.9783522486686707
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1277,
+              "ymin" : 371,
+              "xmax" : 1573,
+              "ymax" : 591,
+              "x" : 1425.0,
+              "y" : 481.0,
+              "confidence" : 0.9240846633911133
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          326.26675
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1048",
+        "_score" : 326.36215,
+        "_source" : {
+          "frame" : "1048",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 126,
+              "ymin" : 480,
+              "xmax" : 447,
+              "ymax" : 827,
+              "x" : 286.5,
+              "y" : 653.5,
+              "confidence" : 0.9712299108505249
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 712,
+              "ymin" : 533,
+              "xmax" : 774,
+              "ymax" : 635,
+              "x" : 743.0,
+              "y" : 584.0,
+              "confidence" : 0.7962653040885925
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 938,
+              "ymin" : 418,
+              "xmax" : 1155,
+              "ymax" : 510,
+              "x" : 1046.5,
+              "y" : 464.0,
+              "confidence" : 0.9918572902679443
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1219,
+              "ymin" : 375,
+              "xmax" : 1525,
+              "ymax" : 589,
+              "x" : 1372.0,
+              "y" : 482.0,
+              "confidence" : 0.9191344380378723
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          326.36215
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1040",
+        "_score" : 326.9285,
+        "_source" : {
+          "frame" : "1040",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 168,
+              "ymin" : 505,
+              "xmax" : 782,
+              "ymax" : 915,
+              "x" : 475.0,
+              "y" : 710.0,
+              "confidence" : 0.9795985221862793
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 966,
+              "ymin" : 540,
+              "xmax" : 1023,
+              "ymax" : 641,
+              "x" : 994.5,
+              "y" : 590.5,
+              "confidence" : 0.5421724319458008
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1205,
+              "ymin" : 420,
+              "xmax" : 1389,
+              "ymax" : 513,
+              "x" : 1297.0,
+              "y" : 466.5,
+              "confidence" : 0.986777663230896
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1522,
+              "ymin" : 363,
+              "xmax" : 1766,
+              "ymax" : 587,
+              "x" : 1644.0,
+              "y" : 475.0,
+              "confidence" : 0.9368014335632324
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          326.9285
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1047",
+        "_score" : 327.01108,
+        "_source" : {
+          "frame" : "1047",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 142,
+              "ymin" : 480,
+              "xmax" : 498,
+              "ymax" : 850,
+              "x" : 320.0,
+              "y" : 665.0,
+              "confidence" : 0.9516586661338806
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 738,
+              "ymin" : 535,
+              "xmax" : 799,
+              "ymax" : 635,
+              "x" : 768.5,
+              "y" : 585.0,
+              "confidence" : 0.8748119473457336
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 966,
+              "ymin" : 419,
+              "xmax" : 1179,
+              "ymax" : 510,
+              "x" : 1072.5,
+              "y" : 464.5,
+              "confidence" : 0.9910228848457336
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1250,
+              "ymin" : 376,
+              "xmax" : 1546,
+              "ymax" : 589,
+              "x" : 1398.0,
+              "y" : 482.5,
+              "confidence" : 0.9176307916641235
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          327.01108
+        ]
+      },
+      {
+        "_index" : "specific",
+        "_type" : "frame",
+        "_id" : "1042",
+        "_score" : 327.56677,
+        "_source" : {
+          "frame" : "1042",
+          "objects" : [
+            {
+              "trackerID" : 502,
+              "class" : "car",
+              "xmin" : 173,
+              "ymin" : 500,
+              "xmax" : 705,
+              "ymax" : 910,
+              "x" : 439.0,
+              "y" : 705.0,
+              "confidence" : 0.9735799431800842
+            },
+            {
+              "trackerID" : 551,
+              "class" : "fire_hydrant",
+              "xmin" : 889,
+              "ymin" : 536,
+              "xmax" : 948,
+              "ymax" : 637,
+              "x" : 918.5,
+              "y" : 586.5,
+              "confidence" : 0.8833006024360657
+            },
+            {
+              "trackerID" : 555,
+              "class" : "car",
+              "xmin" : 1125,
+              "ymin" : 418,
+              "xmax" : 1320,
+              "ymax" : 511,
+              "x" : 1222.5,
+              "y" : 464.5,
+              "confidence" : 0.9897813200950623
+            },
+            {
+              "trackerID" : 557,
+              "class" : "car",
+              "xmin" : 1427,
+              "ymin" : 366,
+              "xmax" : 1690,
+              "ymax" : 588,
+              "x" : 1558.5,
+              "y" : 477.0,
+              "confidence" : 0.8582502007484436
+            }
+          ],
+          "objectCounts" : {
+            "car" : 3,
+            "fire hydrant" : 1
+          }
+        },
+        "sort" : [
+          327.56677
+        ]
+      }
+    ]
+  }
+}
