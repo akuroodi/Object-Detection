@@ -30,7 +30,7 @@ export default function QueryInputs(props) {
         console.log(query);
 
         const queryStart = Date.now();
-        const resultObjs = queryES(sampleQuery);
+        const resultObjs = queryES("A", sampleQuery);
         const queryTime = (Date.now() - queryStart);
 
         objsToRes(resultObjs, 30).then(results => {

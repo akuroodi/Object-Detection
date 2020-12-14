@@ -106,7 +106,7 @@ function App() {
           </Step>
         ))}
       </Stepper>
-      <Container maxWidth="sm" justify="center" className={classes.mainContainer}>
+      <Container maxWidth="md" justify="center" className={classes.mainContainer}>
         {/* <Grid container justify="center"> */}
 
         {activeStep === steps.length ? (

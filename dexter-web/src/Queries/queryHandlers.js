@@ -1,5 +1,5 @@
 
-export async function queryES(queryJSON) {
+export async function queryES(videoName, queryJSON) {
     const resultObjs = await fetch("http://localhost:9200/dexter/_search?pretty", {
         method: 'POST',
         headers: {
