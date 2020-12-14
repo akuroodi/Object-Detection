@@ -11,3 +11,6 @@ curl -s -H "Content-Type: application/x-ndjson" -XPOST 'localhost:9200/c/frame/_
 
 # Create index for video D
 curl -s -H "Content-Type: application/x-ndjson" -XPOST 'localhost:9200/d/frame/_bulk?pretty' --data-binary @../elasticsearchInput/elasticsearch_bulk_d.txt
+
+# Create index for video specific
+curl -s -H "Content-Type: application/x-ndjson" -XPOST 'localhost:9200/specific/frame/_bulk?pretty' --data-binary @../elasticsearchInput/elasticsearch_bulk_specific.txt
