@@ -10,7 +10,7 @@ export async function queryES(videoName, queryJSON) {
         return json.hits.hits;
     }).catch(e => {
         alert("Failed to Connect to ElasticSearch Server");
-        return [];
+        return null;
     });
     return resultObjs;
 }

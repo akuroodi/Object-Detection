@@ -47,7 +47,7 @@ export default function VideoSelect(props) {
 
     const videoCards = videos.map((videoUrl, i) => {
         return (
-            <Card container>
+            <Card key={i}>
                 <CardActionArea>
                     {/* <VideoThumbnail
                         videoUrl={videoUrl}

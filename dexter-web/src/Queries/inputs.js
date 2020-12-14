@@ -11,6 +11,8 @@ import Divider from '@material-ui/core/Divider';
 
 import objectClasses from './objectClasses';
 
+import getESquery from './interpreter';
+
 const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
@@ -22,10 +24,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const defaultTarget = {
-    relation: "AND",
+    relation: "INCLUDE",
     objClass: "",
     property: "",
-    value: null
+    value: ""
 };
 
 export default function Inputs(props) {
@@ -57,31 +59,31 @@ export default function Inputs(props) {
                 })}
             >
                 {/* <MenuItem value=""><em>None</em></MenuItem> */}
-                <MenuItem value={"AND"}>AND</MenuItem>
-                <MenuItem value={"OR"}>OR</MenuItem>
-                <MenuItem value={"NOT"}>NOT</MenuItem>
+                <MenuItem value={"INCLUDE"}>Include</MenuItem>
+                <MenuItem value={"EXCLUDE"}>Exclude</MenuItem>
             </Select>
             <FormHelperText></FormHelperText>
         </FormControl>
     );
 
-    const emptyComponent = (
-        <FormControl className={classes.formControl} disabled>
-            <InputLabel id="demo-simple-select-helper-label"></InputLabel>
-            <Select
-                labelId="demo-simple-select-helper-label"
-                id="demo-simple-select-helper"
-                value=""
-            >
-                <MenuItem value=""><em>None</em></MenuItem>
-            </Select>
-            <FormHelperText></FormHelperText>
-        </FormControl>
-    );
+    // const emptyComponent = (
+    //     <FormControl className={classes.formControl} disabled>
+    //         <InputLabel id="demo-simple-select-helper-label"></InputLabel>
+    //         <Select
+    //             labelId="demo-simple-select-helper-label"
+    //             id="demo-simple-select-helper"
+    //             value=""
+    //         >
+    //             <MenuItem value=""><em>None</em></MenuItem>
+    //         </Select>
+    //         <FormHelperText></FormHelperText>
+    //     </FormControl>
+    // );
 
     const targetComponent = (i) => (
         <div key={i}>
-            {i > 0 ? relationComponent(i) : emptyComponent}
+            {/* {i > 0 ? relationComponent(i) : emptyComponent} */}
+            {relationComponent(i)}
             <FormControl className={classes.formControl}>
                 <InputLabel id="demo-simple-select-helper-label">Class</InputLabel>
                 <Select
@@ -89,9 +91,6 @@ export default function Inputs(props) {
                     id="demo-simple-select-helper"
                     value={targets[i].objClass}
                     onChange={(e) => setTargets((pre) => {
-
-                        console.log(pre);
-
                         let next = [...pre];
                         next[i].objClass = e.target.value
                         return next;
@@ -157,15 +156,15 @@ export default function Inputs(props) {
                 <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
-                    value={targets[i].property ? targets[i].value : null}
+                    value={targets[i].property ? targets[i].value : ""}
                     onChange={(e) => setTargets((pre) => {
                         let next = [...pre];
                         next[i].value = e.target.value
                         return next;
                     })}
                 >
-                    <MenuItem value={null}><em>None</em></MenuItem>
-                    {numberItems(30)}
+                    <MenuItem value={""}><em>None</em></MenuItem>
+                    {numberItems(31)}
                 </Select>
                 <FormHelperText>Property Value</FormHelperText>
             </FormControl>
@@ -181,7 +180,7 @@ export default function Inputs(props) {
                 value={limit}
                 onChange={(e) => setLimit(e.target.value)}
             >
-                {numberItems(11)}
+                {numberItems(31)}
             </Select>
             <FormHelperText>Number of Results</FormHelperText>
         </FormControl>
@@ -197,31 +196,18 @@ export default function Inputs(props) {
                 onChange={(e) => setOrderBy(e.target.value)}
             >
                 <MenuItem value={""}><em>None</em></MenuItem>
+                <MenuItem value={"Distance"}>Distance</MenuItem>
             </Select>
             <FormHelperText>Order of Results</FormHelperText>
         </FormControl>
     );
 
-    const [queryComponents, setQueryComponents] = React.useState([]);
-    // const queryComponents = [targetComponent(0)];
-
     useEffect(() => {
-        // console.log(queryComponents);
-        console.log(targets);
-        const numComponents = queryComponents.length;
-        console.log(numComponents);
+        // Update ESQuery
+        const ESquery = getESquery({targets: targets, limit: limit, orderby: orderby});
+        props.setQuery(ESquery);
 
-        if (targets.length > numComponents)
-            setQueryComponents((pre) => ([...pre, targetComponent(numComponents)]));
-        else if (targets.length < numComponents) {
-            setQueryComponents((pre) => {
-                let next = [...pre];
-                next.pop();
-                return next;
-            });
-        }
-
-    }, [targets]);
+    }, [targets, limit, orderby]);
 
     const handleAdd = () => {
         setTargets((pre) => ([...pre, Object.assign({}, defaultTarget)]));
@@ -245,7 +231,7 @@ export default function Inputs(props) {
             >
                 Delete
             </Button>
-            {queryComponents}
+            {targets.map((target, i) => targetComponent(i))}
             <Divider />
             {limitComponent}
             {orderbyComponent}

@@ -30,20 +30,24 @@ export default function QueryInputs(props) {
         console.log(query);
 
         const queryStart = Date.now();
-        const resultObjs = queryES("A", sampleQuery);
+        // const resultObjs = queryES("A", sampleQuery);
+        const resultObjs = queryES("A", query);
         const queryTime = (Date.now() - queryStart);
 
-        objsToRes(resultObjs, 30).then(results => {
-            console.log(results);
-
-            props.setResults(results);
-
-            setQueryTime(queryTime);
-            setNumResults(results.length);
-            setDoneQuery(true);
-            setIsFetching(false);
-            props.setDisableNext(false)
-        });
+        console.log(resultObjs);
+        if (resultObjs !== null) {
+            objsToRes(resultObjs, 30).then(results => {
+                console.log(results);
+    
+                props.setResults(results);
+    
+                setQueryTime(queryTime);
+                setNumResults(results.length);
+                setDoneQuery(true);
+                setIsFetching(false);
+                props.setDisableNext(false)
+            });
+        }
     }
 
     return (
