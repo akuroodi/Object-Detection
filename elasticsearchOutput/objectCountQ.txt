@@ -1,0 +1,11 @@
+Object Count Query:
+1. frame: 74, score: 0.8854862
+2. frame: 73, score: 0.88529
+3. frame: 39, score: 0.88366324
+4. frame: 72, score: 0.88269144
+5. frame: 24, score: 0.8788305
+6. frame: 26, score: 0.8733115
+7. frame: 25, score: 0.8702222
+8. frame: 71, score: 0.86871266
+9. frame: 70, score: 0.86677927
+10. frame: 27, score: 0.86492085

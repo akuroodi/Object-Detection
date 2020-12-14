@@ -1,0 +1,11 @@
+Multi Object Query:
+1. frame: 2613, score: 2.7138386
+2. frame: 2608, score: 2.6970122
+3. frame: 2609, score: 2.682767
+4. frame: 2610, score: 2.654968
+5. frame: 2594, score: 2.6193843
+6. frame: 2603, score: 2.607831
+7. frame: 2602, score: 2.5998719
+8. frame: 2607, score: 2.5930755
+9. frame: 2606, score: 2.5693667
+10. frame: 2617, score: 2.561503

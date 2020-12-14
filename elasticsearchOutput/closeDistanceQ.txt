@@ -1,0 +1,11 @@
+Closest Distance Query:
+1. frame: 1028, score: 319.63104
+2. frame: 1045, score: 323.2066
+3. frame: 1039, score: 324.23602
+4. frame: 1044, score: 324.50308
+5. frame: 1043, score: 325.06076
+6. frame: 1046, score: 326.26675
+7. frame: 1048, score: 326.36215
+8. frame: 1040, score: 326.9285
+9. frame: 1047, score: 327.01108
+10. frame: 1042, score: 327.56677
