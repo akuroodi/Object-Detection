@@ -2,9 +2,11 @@
 export default function getESquery(rawQuery) {
     console.log(rawQuery);
 
+    const limit = rawQuery.limit || 1;
+
     const ESquery = {
         "from": 0,
-        "size": rawQuery.limit,
+        "size": limit,
         "query": {
             "bool": {
                 "must": [

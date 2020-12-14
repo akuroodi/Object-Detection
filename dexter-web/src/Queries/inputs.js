@@ -34,7 +34,7 @@ export default function Inputs(props) {
     const classes = useStyles();
 
     const [targets, setTargets] = React.useState([Object.assign({}, defaultTarget)]);
-    const [limit, setLimit] = React.useState(10);
+    const [limit, setLimit] = React.useState("");
     const [orderby, setOrderBy] = React.useState("");
 
     const objClassItems = objectClasses().map((objClass, i) => (
@@ -180,6 +180,7 @@ export default function Inputs(props) {
                 value={limit}
                 onChange={(e) => setLimit(e.target.value)}
             >
+                <MenuItem value={""}><em>None</em></MenuItem>
                 {numberItems(31)}
             </Select>
             <FormHelperText>Number of Results</FormHelperText>
@@ -206,7 +207,7 @@ export default function Inputs(props) {
         // Update ESQuery
         const ESquery = getESquery({targets: targets, limit: limit, orderby: orderby});
         props.setQuery(ESquery);
-
+// eslint-disable-next-line
     }, [targets, limit, orderby]);
 
     const handleAdd = () => {

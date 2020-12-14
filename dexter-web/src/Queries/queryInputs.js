@@ -7,16 +7,6 @@ import Inputs from './inputs';
 
 import { queryES, objsToRes } from './queryHandlers';
 
-const sampleQuery = {
-    "query": {
-        "bool": {
-            "must": [
-                { "match": { "objects.class": "truck" } },
-                { "match": { "objects.class": "person" } }
-            ]
-        }
-    }
-};
 
 export default function QueryInputs(props) {
     const [isFetching, setIsFetching] = React.useState(false);
@@ -30,7 +20,6 @@ export default function QueryInputs(props) {
         console.log(query);
 
         const queryStart = Date.now();
-        // const resultObjs = queryES("A", sampleQuery);
         const resultObjs = queryES("A", query);
         const queryTime = (Date.now() - queryStart);
 
