@@ -23,20 +23,21 @@ export default function QueryInputs(props) {
         console.log(ESquery);
 
         const queryStart = Date.now();
-        const resultObjs = queryES(props.selectedVideo, ESquery);
-        const queryTime = (Date.now() - queryStart);
-
-        objsToRes(resultObjs, 30).then(results => {
-            console.log(results);
-            if (results == null) return;
-
-            props.setResults(results);
-
-            setQueryTime(queryTime);
-            setNumResults(results.length);
-            setDoneQuery(true);
-            setIsFetching(false);
-            props.setDisableNext(false)
+        queryES(props.selectedVideo, ESquery).then((resultObjs) => {
+            const queryTime = (Date.now() - queryStart);
+            
+            objsToRes(resultObjs, 30).then(results => {
+                console.log(results);
+                if (results == null) return;
+    
+                props.setResults(results);
+    
+                setQueryTime(queryTime);
+                setNumResults(results.length);
+                setDoneQuery(true);
+                setIsFetching(false);
+                props.setDisableNext(false)
+            });
         });
     }
 

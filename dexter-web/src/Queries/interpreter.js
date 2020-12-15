@@ -3,7 +3,6 @@ export default function getESquery(rawQuery) {
 
     const objClasses = rawQuery.targets.map((target) => (target.objClass));
 
-    const order = rawQuery.order || "asc"
     const limit = rawQuery.limit || 1;
 
     const ESquery = {
@@ -22,11 +21,14 @@ export default function getESquery(rawQuery) {
                     // "source": "double total = 0; for (item in params._source.objects) { if (item.class == \"knife\" || item.class == \"bed\" || item.class == \"handbag\") { total += item.confidence }} return total;"
                 }
             }
-        },
-        "sort": [
-            { "_score": { "order": order } }
-        ]
+        }
     };
+
+    if (rawQuery.order) {
+        ESquery.sort = [
+            {"_score": { "order": rawQuery.order }}
+        ];
+    }
 
     ESquery.query.script_score.script.source = multiObjFunc(objClasses);
 

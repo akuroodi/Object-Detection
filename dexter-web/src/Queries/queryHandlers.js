@@ -17,7 +17,6 @@ export async function queryES(videoUrl, queryJSON) {
 }
 
 export async function objsToRes(objs, fps) {
-    objs = await objs;
     console.log(objs);
     if (objs === null) return null;
 

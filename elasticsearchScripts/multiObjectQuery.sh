@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run a query to get frames with a knife, a bed, and a handbag
-curl -s -H 'Content-Type: application/json' -XGET 'localhost:9200/specific/_search?pretty' -d'
+curl -s -H 'Content-Type: application/json' -XGET 'localhost:9200/e/_search?pretty' -d'
 {
   "query": {
     "script_score" : {
